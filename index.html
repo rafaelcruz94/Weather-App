@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a560377048.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <title>Weather App</title>
+</head>
+<body>
+
+<header>
+    <form class="searchform">
+        <label for="search-box">
+            <input type="search" id="search" placeholder="Search" list="suggestions" name="search" autocomplete="off">
+            <datalist id="suggestions">
+                <option value="Lisbon"></option>
+                <option value="Porto"></option>
+            </datalist>
+        </label>
+        <button class="search-btn" type="submit" id="submit"><i class="fas fa-search"></i></button>
+    </form>
+</header>
+
+<section id="hero">
+    <div>
+        <div class="city_country">
+            <h1 id="city"></h1>
+            <h1 id="country"></h1>
+        </div>
+            <div class="temp">
+                <h1 id="temperature"></h1>
+            </div>
+            <div class="details">
+                <p id="details"></p> 
+            </div>
+    </div>    
+    <div id="icon_temp">
+        <div id='weatherIcon'></div>
+    </div>
+</section>
+
+<main>
+<section class="forecast">
+    <div class="forecast-weather">
+        <p class="title">Next week:</p>
+      <div class="day">
+          <div class="text-day1">
+              <p id="day1"></p>
+          </div>
+          <div class="forecat-temp">
+              <div id="min-max-1"></div>
+          </div>
+          <div id="img-forecast" class="img-day1"></div>
+      </div>
+
+      <div class="day">
+          <div class="text-day2">
+              <p id="day2"></p>
+          </div>
+          <div class="forecat-temp">
+              <div id="min-max-2"></div>
+          </div>
+          <div id="img-forecast" class="img-day2"></div>
+      </div>
+
+      <div class="day">
+          <div class="text-day3">
+              <p id="day3"></p>
+          </div>
+          <div class="forecat-temp">
+              <div id="min-max-3"></div>
+          </div>
+          <div id="img-forecast" class="img-day3"></div>
+      </div>
+
+      <div class="day">
+          <div class="text-day4">
+              <p id="day4"></p>
+          </div>
+          <div class="forecat-temp">
+              <div id="min-max-4"></div>
+          </div>
+          <div id="img-forecast" class="img-day4"></div>
+      </div>
+
+      <div class="day">
+          <div class="text-day5">
+              <p id="day5"></p>
+          </div>
+          <div class="forecat-temp">
+              <div id="min-max-5"></div>
+          </div>
+          <div id="img-forecast" class="img-day5"></div>
+      </div>
+
+      <div class="day">
+          <div class="text-day6">
+              <p id="day6"></p>
+          </div>
+          <div class="forecat-temp">
+              <div id="min-max-6"></div>
+          </div>
+          <div id="img-forecast" class="img-day6"></div>
+      </div>
+
+      <div class="day">
+          <div class="text-day7">
+              <p id="day7"></p>
+          </div>
+          <div class="forecat-temp">
+              <div id="min-max-7"></div>
+          </div>
+          <div id="img-forecast" class="img-day7"></div>
+      </div>
+    </div>
+</section>
+</main>
+
+<footer>
+  <div class="list-wrap">
+      <p class="title">History:</p>
+      <div class="list" id="list"></div>
+  </div>
+<small>Rafael Cruz 2021</small>
+</footer>
+</body>
+</html>

@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    position: fixed;
+    display: grid;
+    place-items: center;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    background-color: rgb(35,38,52);
+    color:rgb(255,255,255);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+}
+
+.search-btn{
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.fas{
+    color: white;
+    font-size: 2em;
+}
+
+.fas:hover{
+    color: orange;
+    font-size: 2em;
+}
+
+.fas:active{
+    transform: scale(1.1);
+}
+
+.searchform{
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+label, input {
+    vertical-align: baseline;
+    color: white;
+}
+
+input[type="search"] {
+    border: 2px solid white;
+    border-width: 0 0 3px;
+    background-color: transparent;
+    font: 1em "Open Sans", sans-serif;
+    padding: 0.125em 0.225em;
+    width: 100%;
+    float: left; 
+}
+  
+input[type="search"]:focus {
+    color: #E18728;
+    border-color: #E18728;
+    outline: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color:white;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color:white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color:white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color:white;
+}
+
+#hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.temp{
+    margin-top: -2.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.city_country{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.city_country h1{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#temperature{
+    display: flex;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.weatherIcon{
+    display: flex;
+    width: 10em;
+    height: 10em;
+    align-items: center;
+    justify-content: center;
+}
+
+#details{
+    display: flex;
+    font-size: 0.6em;
+    text-transform: capitalize;
+    text-decoration: overline;
+    margin-top: -2.7em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon_temp{
+    margin-right: -1em;
+}
+
+forecast{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weatherIcon1{
+    display: flex;
+    width: 4em;
+    height: 4em;
+    align-items: center;
+    justify-content: center;
+}
+
+.day{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.8em;
+    color: white;
+    margin-top: -1.1em;
+    line-height: 0%;    
+}
+
+.forecat-temp{
+    color: white;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.2em;
+}
+
+.min{
+    display: inline;
+    color: gray;
+}
+
+.title{
+    display: flex;
+    color:#E18728;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-wrap{
+    margin-top: -1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.city-button{
+    background-color: transparent;
+    color:white;
+    border:none;
+    border-bottom: 1px solid;;
+    margin-right: 0.2em;
+}
+.delete-button{
+    background-color: transparent;
+    margin-right: 0.5em;
+    border:none;
+    color:#E18728;
+}
+
+small{
+    display: flex;
+   text-align: center;
+   font-size: 0.6em; 
+   align-items: center;
+   justify-content: center;
+   margin-top: 2em;
+   z-index: -999;
+}
+
+@media screen and (min-width: 700px) {
+    input[type="search"] {
+        min-width: 600px;
+    }
+    html{
+        font-size: 18px;
+    }
+    .weatherIcon{
+        width: 15em;
+        height: 15em;
+    }
+    main{
+        margin-top: -3em;
+    }
+    #hero{
+        margin-top: -2.5em;
+    }
+    .forecat-temp{
+        color: white;
+        margin-left: 5em;
+        margin-right: 5em;
+        font-size: 1.2em;
+    }
+}
